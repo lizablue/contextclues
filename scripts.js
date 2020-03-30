@@ -1,16 +1,28 @@
 
 // create h3's to display accusations
-function addAcc() {
-    var i = 0;
-    function countAcc() {
-        if (i < 100) {
-            $('div').append('<h3>Accusation ' + i + '</h3>');
-            i++;
-        };
-    }; countAcc();
+var x = 0;
+// function addAcc() {
+//     if (x < 100) {
+//     function countAcc() {
+//             $('div').append('<h3>Accusation ' + x + '</h3>');
+//             x++;
+//         };
     
-};
-addAcc();
+//     }; 
+//     countAcc();
+// };
+// addAcc();
+
+var acc = $('div').append('<h3>Accusation ' + x + '</h3>');
+
+function countAcc() {
+    acc * 100
+    function addAcc() {
+        x++;
+    }
+    addAcc();
+}
+countAcc();
 
 var friends = ['lily', 'marshall', , 'robin', 'ted', 'barney'];
 var locations = ['house', 'patio', 'bar', 'roof', 'office', 'garage', 'pool', 'cave', 'attic', 'basement'];
