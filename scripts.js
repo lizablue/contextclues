@@ -1,29 +1,10 @@
 
 // create h3's to display accusations
-var x = 0;
-// function addAcc() {
-//     if (x < 100) {
-//     function countAcc() {
-//             $('div').append('<h3>Accusation ' + x + '</h3>');
-//             x++;
-//         };
-    
-//     }; 
-//     countAcc();
-// };
-// addAcc();
-
-var acc = $('div').append('<h3>Accusation ' + x + '</h3>');
-
-function countAcc() {
-    acc * 100
-    function addAcc() {
-        x++;
-    }
-    addAcc();
+for(var x = 1; x <= 100; x++) {
+    // $('.accusations').append($('h3').text(`Accusation ${x}`));
+    $('.accusations').append('<h3>Accusation ' + x + '</h3>');
 }
-countAcc();
 
-var friends = ['lily', 'marshall', , 'robin', 'ted', 'barney'];
+var friends = ['jerry', 'elaine', , 'george', 'kramer', 'newman'];
 var locations = ['house', 'patio', 'bar', 'roof', 'office', 'garage', 'pool', 'cave', 'attic', 'basement'];
-var objects = ['balloon', 'playdoh', 'sharpie', 'robot', 'notebook', 'eraser', 'hat', 'coffee mug', 'lamp', 'earring', 'pillow', 'blanket', 'shoe', 'chair', 'mirror', 'glitter', 'jacket', 'popsicle', 'hammock', 'tissues'];
+var objects = ['balloon', 'playdoh', 'sharpie', 'robot', 'notebook', 'eraser', 'hat', 'coffee mug', 'lamp', 'earring', 'pillow', 'blanket', 'shoe', 'chair', 'mirror', 'glitter', 'jacket', 'popsicle', 'hammock', 'paint'];
