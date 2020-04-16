@@ -5,10 +5,6 @@ var locations = ['house', 'yard', 'bar', 'gym', 'office', 'garage', 'pool', 'cav
 
 var solve = accAlert();
 
-function randomVal(array) {
-    return array[Math.floor(Math.random() * array.length)];
-}
-
 // create h3's to display accusations
 for (var i = 1; i <= 100; i++) {
     $('.accusations').append('<h3>Accusation: ' + i + '</h3>');
@@ -19,20 +15,25 @@ function accAlert() {
     var friendName
     var weaponName
     var locationName
-    
-    return function() {
-        // get random values with each click
-        friendName = randomVal(friends);
-        weaponName = randomVal(objects);
-        locationName = randomVal(locations);
-        //accusation alert
-        alert(`I accuse ${friendName}, with the ${weaponName}, in the ${locationName}!`);
+
+    return function () {
+
+        $('h3').click(function () {
+            // get random values with each click
+            i++;
+            friendName = friends[i % friends.length];
+            weaponName = objects[i % objects.length];
+            locationName = locations[i % locations.length];
+
+            //accusation alert
+            alert(`I accuse ${friendName}, with the ${weaponName}, in the ${locationName}!`);
+        })
+
     }
+
 };
 
-$('h3').click(function() {
-    console.log(solve());
-})
+solve();
 
 
 
